@@ -1,0 +1,20 @@
+@import url(./__title/header__title.css);
+@import url(./__sort-button/header__sort-button.css);
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 25px;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+}

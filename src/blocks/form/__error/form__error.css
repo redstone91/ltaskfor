@@ -1,0 +1,11 @@
+.form__error {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: -0.02em;
+  color: #FF8484;
+  margin-top: 4px;
+}

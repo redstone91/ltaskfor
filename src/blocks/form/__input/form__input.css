@@ -1,0 +1,31 @@
+.form__input {
+  max-height: 36px;
+  padding: 10px 16px 10px 16px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid transparent;
+  background: #FFFEFB;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  transition: border .2s;
+  resize: none;
+}
+
+textarea.form__input {
+  min-height: 108px;
+}
+
+.form__input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #B4B4B4;
+}
+
+.form__input:focus {
+  border: 1px solid #7BAE73;
+}

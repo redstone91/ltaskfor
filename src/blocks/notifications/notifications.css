@@ -1,0 +1,15 @@
+.notifications {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  display: flex;
+  flex-flow: column nowrap;
+ }
+
+ @media screen and (max-width: 414px) {
+  .notifications {
+  left: 50%;
+  margin-left: -164px;
+  bottom: 16px;
+  }
+}

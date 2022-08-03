@@ -1,0 +1,17 @@
+.aside {
+  max-width: 332px;
+  grid-area: aside;
+  position: sticky;
+  top: 32px;
+  height: calc(100vh-116px);
+}
+
+@media screen and (max-width: 415px) {
+  .aside {
+    position: static;
+    max-width: none;
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+  }
+}

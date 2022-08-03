@@ -1,0 +1,51 @@
+@import url(./__message/notification__message.css);
+@import url(./__message/_hided/notification__message_hided.css);
+@import url(./__message/_shown/notification__message_shown.css);
+
+.notification {
+  display: flex;
+  width: 332px;
+  min-height: 38px;
+  background-color: #fff;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  margin-bottom: 5px;
+}
+
+.notification:last-of-type {
+  margin-bottom: 0;
+}
+
+.notification::before {
+  content: '';
+  background-color: #7BAE73;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  animation: bounce 1s ease 0s infinite normal forwards;
+}
+
+@media screen and (max-width: 414px) {
+  .notification {
+    max-width: 328px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1.5);
+    transform-origin: center center;
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}

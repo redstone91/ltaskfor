@@ -1,0 +1,19 @@
+@import url(./__input-group/form__input-group.css);
+@import url(./__input/form__input.css);
+@import url(./__label/form__label.css);
+@import url(./__input/_validity/form__input_validity_error.css);
+@import url(./__error/form__error.css);
+@import url(./__submit-button/form__submit-button.css);
+
+.form {
+  background: #FFFEFB;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+
+.form__input:required ~ .form__label:before {
+  content: '*';
+  margin-right: auto;
+}

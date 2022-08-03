@@ -1,0 +1,7 @@
+.form__input_validity_error {
+  border: 1px solid #FF8484;
+}
+
+.form__input:focus.form__input_validity_error {
+  border: 1px solid #FF8484;
+}

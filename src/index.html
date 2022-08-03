@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление товара</title>
+</head>
+
+<body class="root">
+    <header class="header">
+        <h1 class="header__title">Добавление товара</h1>
+        <select name="sort-button" id="sort-button" class="header__sort-button">
+            <option disabled>Сортировка товаров</option>
+            <option value="default" selected>По умолчанию</option>
+            <option value="byName">По названию</option>
+            <option value="byPriceIncrease">По возрастанию цены</option>
+            <option value="byPriceDecrease">По убыванию цены</option>
+        </select>
+    </header>
+    <aside class="aside">
+        <form class="form" name="product-form" novalidate>
+            <div class="form__input-group">
+                <label class="form__label" for="name">Наименование товара<span class="form__label_required"></span></label>
+                <input class="form__input" type="text" placeholder="Введите наименование товара" name="name" id="name" minlength="1" maxlength="30" required>
+                <span class="form__error" id="name-error"></span>
+            </div>
+            <div class="form__input-group">
+                <label class="form__label" for="desc">Описание товара</label>
+                <textarea name="desc" id="desc" rows="5" class="form__input" placeholder="Введите описание товара"></textarea>
+                <span class="form__error" id="desc-error"></span>
+            </div>
+            <div class="form__input-group">
+                <label class="form__label" for="image">Ссылка на изображение товара<span class="form__label_required"></span></label>
+                <input name="image" id="image" class="form__input" type="url" placeholder="Введите ссылку" minlength="1" pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" required>
+                <span id="image-error" class="form__error"></span>
+            </div>
+            <div class="form__input-group">
+                <label class="form__label" for="price">Цена товара<span class="form__label_required"></span></label>
+                <input class="form__input" id="price" type="number" placeholder="Введите цену" name="price" min="1" max="10000000" required>
+                <span class="form__error" id="price-error"></span>
+            </div>
+            <button name="submit" class="form__submit-button" type="submit">Добавить товар</button>
+        </form>
+    </aside>
+    <section class="products">
+        <ul class="products__items">
+            <!-- Товары -->
+        </ul>
+    </section>
+    <div class="notifications">
+        <!-- Оповещения -->
+    </div>
+
+    <template id="product">
+        <li class="product">
+            <img class="product__image" src="#" alt="#">
+            <button class="product__delete-button" type="button" aria-label="Удалить"></button>
+            <h3 class="product__title"></h3>
+            <p class="product__desc"></p>
+            <p class="product__price"></p>
+        </li>
+    </template>
+
+    <template id="notification">
+        <div class="notification">
+            <p class="notification__message"></p>
+        </div>
+    </template>
+
+</body>
+
+</html>

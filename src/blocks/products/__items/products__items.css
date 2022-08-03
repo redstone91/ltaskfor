@@ -1,0 +1,17 @@
+.products__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 332px);
+  gap: 16px;
+  justify-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .products__items {
+    display: flex;
+    flex-flow: column;
+  }
+}

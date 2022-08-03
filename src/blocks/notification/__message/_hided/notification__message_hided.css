@@ -1,0 +1,15 @@
+.notification__message_hided {
+  animation: hide 1s ease 0s 1 normal forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}

@@ -1,0 +1,27 @@
+/* normalize.css */
+@import url(../vendor/normalize.css);
+
+/* fonts */
+@import url(../vendor/fonts.css);
+
+/* root */
+@import url(../blocks/root/root.css);
+
+/* header */
+@import url(../blocks/header/header.css);
+
+/* aside */
+@import url(../blocks/aside/aside.css);
+
+/* form */
+@import url(../blocks/form/form.css);
+
+/* products */
+@import url(../blocks/products/products.css);
+
+/* product */
+@import url(../blocks/product/product.css);
+
+/* notifications */
+@import url(../blocks/notifications/notifications.css);
+@import url(../blocks/notification/notification.css);

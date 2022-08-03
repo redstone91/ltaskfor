@@ -1,0 +1,56 @@
+@import url(./__title/product__title.css);
+@import url(./__image/product__image.css);
+@import url(./__delete-button/product__delete-button.css);
+@import url(./__desc/product__desc.css);
+@import url(./__price/product__price.css);
+
+.product {
+  position: relative;
+  height: 423px;
+  width: 332px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  background: #FFFEFB;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.product:hover .product__delete-button {
+  display: block;
+}
+
+
+.new-product {
+  animation: newAnim 520ms ease-in-out 0s 1 normal forwards;
+}
+
+.remove-product {
+  animation: removeAnim 400ms ease-in-out 0s 1 normal forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+}
+
+@keyframes removeAnim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes newAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
